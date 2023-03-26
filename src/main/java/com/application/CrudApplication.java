@@ -1,9 +1,7 @@
 package com.application;
 
-import com.application.entity.Employee;
-import com.application.repos.EmployeeRepository;
-//import net.javaguides.springboot.model.Employee;
-//import net.javaguides.springboot.repository.EmployeeRepository;
+import com.application.entity.User;
+import com.application.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -22,20 +20,20 @@ public class CrudApplication implements CommandLineRunner {
     }
 
     @Autowired
-    private EmployeeRepository employeeRepository;
+    private UserRepository userRepository;
 
     @Override
     public void run(String... args) throws Exception {
-		Employee employee = new Employee();
-		employee.setFirstName("Eliza");
-		employee.setLastName("Marcu");
-		employee.setEmailId("elizamarcu@gmail.com");
-		employeeRepository.save(employee);
+		User user = new User();
+		user.setFirstName("Eliza");
+		user.setLastName("Marcu");
+		user.setEmailId("elizamarcu@gmail.com");
+		userRepository.save(user);
 
-		Employee employee1 = new Employee();
-		employee1.setFirstName("Ion");
-		employee1.setLastName("Popa");
-		employee1.setEmailId("ionpopa@gmail.com");
-		employeeRepository.save(employee1);
+		User user1 = new User();
+		user1.setFirstName("Ion");
+		user1.setLastName("Popa");
+		user1.setEmailId("ionpopa@gmail.com");
+		userRepository.save(user1);
     }
 }

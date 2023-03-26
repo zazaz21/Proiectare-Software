@@ -1,9 +1,9 @@
 package com.application.repos;
 
 //import net.javaguides.springboot.model.Employee;
-import com.application.entity.Employee;
+import com.application.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
     // all crud database methods
 }
