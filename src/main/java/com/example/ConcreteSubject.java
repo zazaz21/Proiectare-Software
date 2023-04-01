@@ -2,12 +2,13 @@ package com.example;
 
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class ConcreteSubject implements Subject {
     private List<Observer> observers = new ArrayList<>();
+    private String state;
 
     @Override
     public void attach(Observer observer) {
@@ -24,5 +25,14 @@ public class ConcreteSubject implements Subject {
         for (Observer observer : observers) {
             observer.update();
         }
+    }
+
+    public void setState(String new_state) {
+        this.state = new_state;
+        notifyObservers();
+    }
+
+    public String getState() {
+        return state;
     }
 }

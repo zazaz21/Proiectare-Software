@@ -9,19 +9,9 @@ import org.springframework.context.annotation.Configuration;
 @SpringBootApplication
 public class Tema2PsApplication {
 
-    /*public static void main(String[] args) {
-        SpringApplication.run(Tema2PsApplication.class, args);
-    }*/
-    @Autowired
-    private ConcreteObserver concreteObserver;
+    public static void main(String[] args) {
+        //SpringApplication.run(Tema2PsApplication.class, args);
 
-    @PostConstruct
-    public void init() {
-        ConcreteSubject concreteSubject = new ConcreteSubject();
-        concreteSubject.attach(concreteObserver);
-
-        // Use concreteSubject to trigger events and notify observers
-    }
+    }}
 
 
-}
