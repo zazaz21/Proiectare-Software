@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 @Component
-public class MyPublisher implements Subject {
+public class ConcreteSubject implements Subject {
     private List<Observer> observers = new ArrayList<>();
 
     @Override

@@ -3,7 +3,7 @@ package com.example;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MySubscriber implements Observer {
+public class ConcreteObserver implements Observer {
 
     @Override
     public void update() {
