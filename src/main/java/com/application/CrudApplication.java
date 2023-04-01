@@ -15,15 +15,12 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 public class CrudApplication implements CommandLineRunner {
 
-    public static void main(String[] args) {
-        SpringApplication.run(CrudApplication.class, args);
-    }
 
-    @Autowired
-    private UserRepository userRepository;
+	@Autowired
+	private UserRepository userRepository;
 
-    @Override
-    public void run(String... args) throws Exception {
+	@Override
+	public void run(String... args) throws Exception {
 		User user = new User();
 		user.setFirstName("Eliza");
 		user.setLastName("Marcu");
@@ -35,5 +32,7 @@ public class CrudApplication implements CommandLineRunner {
 		user1.setLastName("Popa");
 		user1.setEmailId("ionpopa@gmail.com");
 		userRepository.save(user1);
-    }
+	}
 }
+
+
