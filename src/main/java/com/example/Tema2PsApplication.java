@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 public class Tema2PsApplication {
 
     public static void main(String[] args) {
-        //SpringApplication.run(Tema2PsApplication.class, args);
+        SpringApplication.run(Tema2PsApplication.class, args);
 
     }}
 
