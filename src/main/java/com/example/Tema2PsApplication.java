@@ -1,4 +1,5 @@
 package com.example;
+import com.example.repository.CustomerRepository;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;

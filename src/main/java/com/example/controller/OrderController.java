@@ -2,7 +2,6 @@ package com.example.controller;
 
 import com.example.dto.OrderRequest;
 import com.example.dto.OrderResponse;
-import com.example.entity.Customer;
 import com.example.repository.CustomerRepository;
 import com.example.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
