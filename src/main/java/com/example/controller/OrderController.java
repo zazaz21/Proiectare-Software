@@ -12,24 +12,37 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+/**
 
+ The OrderController class provides RESTful endpoints for placing orders and retrieving order information.
+ */
 @RestController
 public class OrderController {
     @Autowired
     private CustomerRepository customerRepository;
     @Autowired
     private ProductRepository productRepository;
-
+    /**
+     * Endpoint to place an order
+     * @param request the order request
+     * @return the Customer entity representing the newly placed order
+     */
     @PostMapping("/placeOrder")
     public Customer placeOrder(@RequestBody OrderRequest request){
        return customerRepository.save(request.getCustomer());
     }
-
+    /**
+     * Endpoint to retrieve all orders
+     * @return a list of all Customer entities representing orders
+     */
     @GetMapping("/findAllOrders")
     public List<Customer> findAllOrders(){
         return customerRepository.findAll();
     }
-
+    /**
+     * Endpoint to retrieve join information about orders and products
+     * @return a list of OrderResponse DTOs containing join information
+     */
     @GetMapping("/getInfo")
     public List<OrderResponse> getJoinInformation(){
         return customerRepository.getJoinInformation();
