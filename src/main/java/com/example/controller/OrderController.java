@@ -1,9 +1,10 @@
 package com.example.controller;
 
-import com.example.dto.OrderRequest;
-import com.example.dto.OrderResponse;
 import com.example.repository.CustomerRepository;
 import com.example.repository.ProductRepository;
+import com.example.dto.OrderRequest;
+import com.example.dto.OrderResponse;
+import com.example.entity.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +22,7 @@ public class OrderController {
 
     @PostMapping("/placeOrder")
     public Customer placeOrder(@RequestBody OrderRequest request){
-        return customerRepository.save(request.getCustomer());
+       return customerRepository.save(request.getCustomer());
     }
 
     @GetMapping("/findAllOrders")

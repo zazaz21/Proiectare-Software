@@ -11,17 +11,19 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@JsonIgnoreProperties(ignoreUnknown = true)
-@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+//@JsonIgnoreProperties(ignoreUnknown = true)
+//@JsonInclude(JsonInclude.Include.NON_DEFAULT)
 public class OrderResponse {
-
+    private int price;
     private String name;
     private String productName;
 
     public OrderResponse(String name, String productName) {
         this.name = name;
         this.productName = productName;
+        this.price=price;
+
     }
 
-    private int price;
+
 }

@@ -1,7 +1,7 @@
 package com.example.entity;
 
 
-import com.example.NotificationService;
+import com.example.service.NotificationService;
 
 import static com.example.entity.Event.*;
 
