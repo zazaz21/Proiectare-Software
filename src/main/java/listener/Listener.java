@@ -1,4 +1,6 @@
-package com.example;
+package listener;
+
+import com.example.entity.Event;
 
 public interface Listener {
 

@@ -1,4 +1,6 @@
-package com.example;
+package listener;
+
+import com.example.entity.Event;
 
 public record EmailMsgListener(String email) implements Listener {
 

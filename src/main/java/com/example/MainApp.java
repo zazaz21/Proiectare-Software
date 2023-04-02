@@ -1,6 +1,10 @@
 package com.example;
 
-import static  com.example.Event.*;
+import com.example.entity.Store;
+import listener.EmailMsgListener;
+import listener.MobileAppListener;
+
+import static com.example.entity.Event.*;
 
 public class MainApp {
 
@@ -8,10 +12,10 @@ public class MainApp {
     public static void main(String[] args) {
 
         Store store = new Store();
-        store.getService().subscribe(NEW_ITEM, new EmailMsgListener("geekific@like.com"));
-        store.getService().subscribe(SALE, new EmailMsgListener("geekific@like.com"));
-        store.getService().subscribe(SALE, new EmailMsgListener("geekific@subs.com"));
-        store.getService().subscribe(NEW_ITEM, new MobileAppListener("GeekificLnS"));
+        store.getService().subscribe(NEW_ITEM, new EmailMsgListener("eliza@like.com"));
+        store.getService().subscribe(SALE, new EmailMsgListener("eliza@like.com"));
+        store.getService().subscribe(SALE, new EmailMsgListener("eliza@subs.com"));
+        store.getService().subscribe(NEW_ITEM, new MobileAppListener("Eliza"));
 
         store.newItemPromotion();
 
@@ -21,7 +25,7 @@ public class MainApp {
 
         System.out.println("==========================================");
 
-        store.getService().unsubscribe(SALE, new EmailMsgListener("geekific@like.com"));
+        store.getService().unsubscribe(SALE, new EmailMsgListener("eliza@like.com"));
         store.salePromotion();
 
     }

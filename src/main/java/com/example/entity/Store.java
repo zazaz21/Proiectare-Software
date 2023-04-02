@@ -1,7 +1,9 @@
-package com.example;
+package com.example.entity;
 
 
-import static com.example.Event.*;
+import com.example.NotificationService;
+
+import static com.example.entity.Event.*;
 
 public class Store {
 
