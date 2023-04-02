@@ -15,7 +15,20 @@ Site-ul pune la dispozitia oricarui utilizator un motor de cautare pe baza numel
 Clientul va putea sa trimita catre admin cererea de a da restock la un anumit produs.
 
 Diagrama de clase:
-![1](https://lh3.googleusercontent.com/pw/AMWts8AP6eqmZ48BFllbVm2wQFPeat38HVi2LlisOfai2A6j7z6DNeM_pUMu6L3wy1g_Hxav9xvdWxuDbOvNjgIv7i0Qj2pYKNeL8K5uJgzTY3hj4AwQVyqimF2lTxC9-6J-R7Ui-8D9hlMjFWrRGNsXgncFc6yk9wI9rBcuSVaxN8spNzK4MigRYnCQ6STpzzGBa282-Z3RLOizRdwgaNRMzhtAPGOjNw6d4LTofqoqphKAZdbrxf8QG32RI6XeQgk1Ovyz3vGoDO4PxVPVZir2HHtAEzYywCCK---JREP-e88btxZrXmNEWCrH0sMI5zWTh5PEz1sK-RCEVKav050fSEHUL4B49u7fWSUIQ4OhCKI90f1KOHaO6cfo42rFkmfMhZNSYCicCKScWQG5hjAtX0P_LAJY82Ko-7Lbmo8L7xKqyEbKECII2W0Yvj5KqrkCLYM3oyQ1c8MMfW6xgF-R4fJxpgmV3OY0bH-EzfWLhKusYeFQUUCb0Up2COf9wjCPeNjiJkiXwyErHaJD0CaeqFhaSw6bT0kA11KI1q1mNLCOSD-9UkNxzz7CKwFZs8JQg47zUueYwWOEpSO7FBUl-yxVqBrMaluxOeS_tLPSVmtdrcidciftUCVyc6SyNWqR1j8GkGa_4k-h__iReRiZDuAWlkkx2Xb5KBPz5QREzTgj_HIuAdoIyEX7XYQ-eo8vKjSy9mGrbVFTbSzItmLRRjz2EC0ZurQODlCRuy8wxuQAHMhCuZZhXbHH646V1hGeW3RZRUVVJaAbz9AxJALLgyqN5-H9jSjrPk7m-d7EZMzOYEwFqbQsH-oCC7Lg2jsODLKr2lh40GwbSenrQySJ8FYDiAiEHyIFOTnq0Z6WO7WAzJupGXg4NPZ_nudHYhS6eLkDeCemWdwDJIsG-cP0NvuNovHy32s2AbkvWuBcH8cDw49igbmNdMjny7Bbwij8=w1397-h729-no?authuser=0)
-![1](https://lh3.googleusercontent.com/pw/AMWts8BBxBRDDt4zk-UpDRg-_qCcj2UTyRGhtK3Lkx7aoWihUfTW4JQXoRkTw4VPY9_hOz17yTGWMME1iW7zRbxAE1GPfFHJ8tjhD_dRiwnBj6EssoknuBvM2QTitcNn07MeSyrKWLTZHqaDpaI0WiSxN08kACJeUSlHmpEt6qu-5pHkPv_LvcI6UGT7EyJKr96F2evYTAMXzh3_XZt1hbN-Aq6XfkvEeMLpRTuX4lpC5shJE4DzBOTEQQMImOWQ5w5LhPwYofdMI0Sc5h3Z7RImiih4fDsgGApjvnVz9Hfh07dglg3sSP3gjoHq-7qu4gskxl3rJ7B3OhZHdUFWBbDozG3igr5qbJaIFQzI5dVR6YHpXpamDvbJzIRHb9Mmbhcdzb4K573dz0edA4tFeLHfjNRynBnZv9Rn9OmM0Cw9WFHqFK2_wV-Vq0EWvYxWb9pRuudxoKLw0Fzi-rWzqCaSaXVAuX-FAeUXXzfww0jsP7fv6pzP0FrTh3MpcJ0hqw2EJC-6UBD54onbI6YRFKu3T1hPrLte076-jvhMN1P7B--t5jaha0yzzNQBjDLBjaXsNGHXgl9UlFUG6BBpJpTU1fDzhUOXnD4pVDAi9sVfXNm5b0WjtROm2tZS2OtIIUMPV497k3gHMo2GuF6LIWmwNZWXPzUqvmu8P8XszI922HkJ1ODLfO23M68hRIamhLfSIODds-dIpsz_GMKLzIH3LokokjSzVnW3Xn3EUISEJJCoXYWxdIHdQUWKigiDdYPs7O-lEfckqjssW6XuIhuGbczP--tP1LTZMd8LuFqA2lM_QUboPaYhISUBOT6eh2VBaEZGHpC7gvkpK1e2xNNfoDE2ivo5EBFDrsoSndDX7xNl8hGJ2dUy4FcC2jSU5IxuUlmbrvWxV1B180mJ3MavMVESrqBkUA_0M-0XRDu75vsghXXHnnYhz3a0gEyJdq49=w1335-h844-no?authuser=0)
+![1](https://github.com/zazaz21/Proiectare-Software/blob/master/Diagrama_1.jpg)
+
+
+II.Observer Design Pattern
+The Observer Design Pattern is a behavioral design pattern that defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
+
+In this pattern, the objects are divided into two types: Observers and Subjects (or Publishers). A Subject is an object that maintains a list of its dependents, also known as Observers, and notifies them automatically of any changes to its state. The Observers then automatically update their own state to reflect the changes in the Subject.
+
+This pattern is useful in situations where there is a need to notify multiple objects of changes in a single object, without having to tightly couple the objects. It allows for loose coupling between objects, making it easy to add new Observers or remove existing ones without affecting the rest of the system.
+
+Examples of this pattern can be found in many real-world situations, such as a news agency that notifies subscribers of breaking news, or a weather station that provides updates to various devices.
+
+
+
+
 
 
